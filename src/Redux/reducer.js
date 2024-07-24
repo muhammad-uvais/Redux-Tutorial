@@ -1,10 +1,10 @@
-import {Add_To_Cart , Decrease_From_Cart , EMPTY_CART } from "./constant";
+import {ADD_TO_CART , DECREASE_FROM_CART , EMPTY_CART } from "./constant";
 
  const cartData = (data = [], action) => {
     switch (action.type) {
-        case Add_To_Cart:
+        case ADD_TO_CART:
             return [action.data, ...data];
-        case Decrease_From_Cart:
+        case DECREASE_FROM_CART:
             // return data.length > 0 ? data.slice(0, -1) : data;
             data.length = data.length ? data.length - 1 : []
             return [...data]

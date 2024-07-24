@@ -1,3 +1,3 @@
-export const Add_To_Cart = "Add_To_Cart"
-export const Decrease_From_Cart = "Decrease_From_Cart"
+export const ADD_TO_CART = "ADD_TO_CART"
+export const DECREASE_FROM_CART = "DECREASE_FROM_CART"
 export const EMPTY_CART = "EMPTY_CART"
