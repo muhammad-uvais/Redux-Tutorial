@@ -1,7 +1,9 @@
 import React from 'react'
-import addToCart from './Redux/action'
-import { useDispatch } from 'react-redux'
 import Navbar from './Components/Navbar'
+import { addToCart } from './Redux/action'
+import { decreaseFomCart } from './Redux/action'
+import { useDispatch } from 'react-redux'
+import { emptyCart } from './Redux/action'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -16,8 +18,11 @@ const App = () => {
     <div>
       <Navbar />
       <button onClick={() => dispatch(addToCart(product))}>Add</button>
+      <button onClick={() => dispatch(decreaseFomCart(product))}>decrease</button>
+      <button onClick={() => dispatch(emptyCart(product))}>empty</button>
+
     </div>
-     )
+  )
 }
 
 export default App
