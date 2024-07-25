@@ -1,23 +1,22 @@
-import { Add_To_Cart } from "./constant"
-import { Decrease_From_Cart } from "./constant"
+import { ADD_TO_CART , DECREASE_FROM_CART , EMPTY_CART } from "./constant"
 
 export const addToCart = (data) => {
     return {
-        type : Add_To_Cart,
+        type : ADD_TO_CART,
         data
     } 
 }
 
 export const decreaseFomCart = (data) => {
     return {
-        type : Decrease_From_Cart,
+        type : DECREASE_FROM_CART,
         data
     }
 }
 
 export const emptyCart = (data) => {
     return {
-        type : "EMPTY_CART",
+        type : EMPTY_CART,
         data
     }
 }
